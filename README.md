@@ -8,8 +8,7 @@ Each project is housed in its own GitHub repository and includes a detailed READ
 
 ## 📚 Skills Highlighted
 
-- Data Cleaning & Preprocessing
-- Data Analysis 
+- Data Analysis, Data Processing, and Data Visualization
 - Visualization with Matplotlib, Plotly, Tableau
 - Git & GitHub Workflow
 
