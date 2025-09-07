@@ -1,7 +1,7 @@
 # ⚾ Baseball Pitching Biomechanics Visualizer
 
 ### 📌 Overview
-This project uses **sample of motion capture landmark data** from Driveline's Open Source Biomechanics data to analyze and visualize pitching mechanics.  
+This project uses **a sample of motion capture landmark data** from Driveline's Open Source Biomechanics data to analyze and visualize pitching mechanics.  
 It generates **3D skeleton animations** frame by frame, and splits recordings into **sessions** whenever the `time` column resets. 
 
 ---
