@@ -35,16 +35,16 @@ project1_pitching/
 
 ### ▶️ Usage
 
-**Run the script with:**
-python src/animate_pitching_simple.py --session 0
-**Arguments**
---csv : Path to dataset (default: data/pitching_landmarks_sample.csv)
---session : Session index to animate (default: 0)
---fps : Frames per second (default: 30)
---out : Output filename (default: session_<id>)
-Example:
-python src/animate_pitching_simple.py --csv data/pitching_landmarks_sample.csv --session 1 --fps 60 --out fast_throw
-This generates:
-fast_throw.mp4   # if ffmpeg available
-fast_throw.gif   # fallback if not
+- **Run the script with:**
+- python src/animate_pitching_simple.py --session 0
+- **Arguments**
+- --csv : Path to dataset (default: data/pitching_landmarks_sample.csv)
+- --session : Session index to animate (default: 0)
+- --fps : Frames per second (default: 30)
+- --out : Output filename (default: session_<id>)
+- Example:
+- python src/animate_pitching_simple.py --csv data/pitching_landmarks_sample.csv --session 1 --fps 60 --out fast_throw
+- This generates:
+- fast_throw.mp4   # if ffmpeg available
+- fast_throw.gif   # fallback if not
 
