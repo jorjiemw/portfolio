@@ -7,7 +7,7 @@ It generates **3D skeleton animations** frame by frame, and splits recordings in
 ---
 
 ### 🎥 Demo
-![Pitching demo](assets/Session 1.mp4)  
+![Demo Animation](assets/Session%201.mp4)  
 
 ---
 
