@@ -14,9 +14,6 @@ try:
 except Exception:
     pass  # if this fails, we'll fall back to GIF saving
 
-# -----------------------------
-# Helpers
-# -----------------------------
 def add_session_id(df, time_col="time"):
     if time_col not in df.columns:
         raise KeyError(f"Expected a '{time_col}' column in the CSV.")
@@ -44,9 +41,8 @@ def safe_axis_limits(chunk, suffix):
         return (-1.0, 1.0)
     return float(arr.min()), float(arr.max())
 
-# -----------------------------
 # Main
-# -----------------------------
+# Option to add what data file, session, fps, and mp4/gif filename
 def main():
     parser = argparse.ArgumentParser(description="Animate pitching landmarks (choose session, remove NaNs).")
     here = os.path.dirname(os.path.abspath(__file__))
