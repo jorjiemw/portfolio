@@ -7,8 +7,7 @@ It generates **3D skeleton animations** frame by frame, and splits recordings in
 ---
 
 ### 🎥 Demo
-![Pitching demo](assets/pitching_demo.gif)  
-*(Add your exported GIF or MP4 screenshot here — put the file in the `assets/` folder and update the link.)*
+![Pitching demo](assets/Session 1.gif)  
 
 ---
 
@@ -26,7 +25,7 @@ project1_pitching/
 ├─ src/               # Code lives here
 │  ├─ animate_pitching.py   # main script for animation              
 ├─ assets/            # Pictures, GIFs, MP4s for README
-│  ├─ Session1.gif
+│  ├─ Session 1.gif
 ├─ data/              # Small sample dataset 
 │  └─ pitching_landmarks.csv
 ├─ requirements.txt   # List of Python packages needed
