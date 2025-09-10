@@ -18,9 +18,9 @@ This toolkit computes **wrist, elbow, and knee flexion magnitudes**, detects **b
 ### 📂 Project Structure
 - project2_shootinganalysis/
 - ├─ README.md                       ← Project description (what it does, how to run it)
-- ├─ src/                            ← Code lives here
-- │   ├─ shooting_mechanics.py       ← main script for animation              
-- ├─ assets/                         ← Pictures, GIFs, MP4s for README
+- ├─ src/                            
+- │   ├─ shooting_mechanics.py       ← main script             
+- ├─ assets/                         ← Plots
 - │  ├─ elbow_flexion_magnitude.png
 - │  ├─ wrist_flexion_magnitude.png
 - │  ├─ knee_flexion_magnitude.png
