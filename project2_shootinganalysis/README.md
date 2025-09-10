@@ -34,4 +34,9 @@ This toolkit computes **wrist, elbow, and knee flexion magnitudes**, detects **b
 
 1. **Install**
    python -m pip install numpy matplotlib pandas
-2. 
+2. **Modify Script**
+- INPUT_JSON    = r"C:\path\BB_FT_P0001_T0001 (1).json"  # ← your JSON file
+- OUT_DIR       = r"C:\plots"                            # ← where to save outputs
+- SHOOTING_SIDE = "R"                                    # or "L"
+- FPS           = 30.0                                   # your recording frame rate
+- SMOOTH_WIN    = 5                                      # 3–9; higher = smoother
