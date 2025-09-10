@@ -5,12 +5,12 @@ This project provides tools to **analyze and visualize the rotational kinematic 
 
 ---
 
-### 🎥 Plot
+### 📈 Plot
 ![Pitching Demo Animation](assets/session_1_rotational_sequence.png)  
 
 ---
 
-## 📊 Features
+## 🔑 Features
 -  **Session Splitting**  
    Supports datasets with `session_id` or automatic splitting when time resets to 0.  
 -  **MER Detection**  
