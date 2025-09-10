@@ -26,6 +26,7 @@ It generates **3D skeleton animations** frame by frame, and splits recordings in
 - │  ├─ animate_pitching.py   ← main script for animation              
 - ├─ assets/                  ← Pictures, GIFs, MP4s for README
 - │  ├─ Session 1.gif
+- │  ├─ Session 1.mp4
 - ├─ data/                    ← Small sample dataset 
 - │  └─ pitching_landmarks.csv
 - ├─ requirements.txt         ← List of Python packages needed
