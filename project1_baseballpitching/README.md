@@ -22,7 +22,7 @@ It generates **3D skeleton animations** frame by frame, and splits recordings in
 ### 📂 Project Structure
 - project1_pitching/
 - ├─ README.md                ← Project description (what it does, how to run it)
-- ├─ src/                     ← Code lives here
+- ├─ src/                    
 - │  ├─ animate_pitching.py   ← main script for animation              
 - ├─ assets/                  ← GIFs, MP4s
 - │  ├─ Session 1.gif
