@@ -28,9 +28,9 @@ Hi, I’m Jorjie Wilson, a biomechanics research engineer and data enthusiast pa
 
 ## 🔗 Projects
 
--[**Pitching Mechanics Analysis**](./Pitching_Mechanics)
--[**Baseball Pitching Animation**](./project1_baseballpitching)
--[**Basketball Free Throw Analysis**](./project2_shootinganalysis)
+- [**Pitching Mechanics Analysis**](./Pitching_Mechanics)
+- [**Baseball Pitching Animation**](./project1_baseballpitching)
+- [**Basketball Free Throw Analysis**](./project2_shootinganalysis)
 
 ---
 
