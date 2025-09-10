@@ -24,7 +24,7 @@ It generates **3D skeleton animations** frame by frame, and splits recordings in
 - ├─ README.md                ← Project description (what it does, how to run it)
 - ├─ src/                     ← Code lives here
 - │  ├─ animate_pitching.py   ← main script for animation              
-- ├─ assets/                  ← Pictures, GIFs, MP4s for README
+- ├─ assets/                  ← GIFs, MP4s
 - │  ├─ Session 1.gif
 - │  ├─ Session 1.mp4
 - ├─ data/                    ← Small sample dataset 
