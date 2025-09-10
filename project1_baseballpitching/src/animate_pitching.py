@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
+from matplotlib.animation import FFMpegWriter, PillowWriter
 from mpl_toolkits.mplot3d import Axes3D  # noqa: F401 (needed for 3D)
 import matplotlib as mpl
 
@@ -12,14 +13,17 @@ try:
     import imageio_ffmpeg
     mpl.rcParams["animation.ffmpeg_path"] = imageio_ffmpeg.get_ffmpeg_exe()
 except Exception:
-    pass  # if this fails, we'll fall back to GIF saving
+    pass  # if this fails, MP4 save may still work if ffmpeg is on PATH
 
+# -----------------------------
+# Helpers
+# -----------------------------
 def add_session_id(df, time_col="time"):
     if time_col not in df.columns:
         raise KeyError(f"Expected a '{time_col}' column in the CSV.")
     t = pd.to_numeric(df[time_col], errors="coerce").ffill().fillna(0.0)
     resets = (t.diff() < 0) | ((t == 0) & (t.index != t.index.min()))
-    return resets.cumsum().astype(int)
+    return resets.cumsum().astype(int)  # 0-based internal IDs
 
 def clean_chunk_dropna(chunk):
     """Drop frames that have NaN in any coordinate column (*_x, *_y, *_z)."""
@@ -41,18 +45,20 @@ def safe_axis_limits(chunk, suffix):
         return (-1.0, 1.0)
     return float(arr.min()), float(arr.max())
 
+# -----------------------------
 # Main
-# Option to add what data file, session, fps, and mp4/gif filename
+# -----------------------------
 def main():
     parser = argparse.ArgumentParser(description="Animate pitching landmarks (choose session, remove NaNs).")
     here = os.path.dirname(os.path.abspath(__file__))
     parser.add_argument("--csv", default=os.path.join(here, "pitching_landmarks.csv"),
                         help="Path to landmarks CSV (default: ./pitching_landmarks.csv)")
     parser.add_argument("--time-col", default="time", help="Time column name (default: time)")
-    parser.add_argument("--session", type=int, default=0, help="Session index to animate (0=first)")
+    parser.add_argument("--session", type=int, default=1,
+                        help="1-based session number to animate (1 = first)")
     parser.add_argument("--fps", type=int, default=30, help="Frames per second (default: 30)")
     parser.add_argument("--out", default=None,
-                        help="Output base name without extension (default: session_<idx> in the script folder)")
+                        help="Output base name without extension (default: session_<N> in the CSV folder)")
     args = parser.parse_args()
 
     # Load CSV
@@ -65,10 +71,15 @@ def main():
     groups = list(df.groupby("session_id"))
     if not groups:
         raise RuntimeError("No sessions detected. Check your time column and values.")
-    if args.session < 0 or args.session >= len(groups):
-        raise IndexError(f"Requested session {args.session} out of range (0..{len(groups)-1}).")
 
-    sid, chunk = groups[args.session]
+    n_sessions = len(groups)
+    if args.session < 1 or args.session > n_sessions:
+        raise IndexError(f"Requested session {args.session} out of range (1..{n_sessions}).")
+
+    # Map 1-based CLI to 0-based internal index
+    idx0 = args.session - 1
+    sid0, chunk = groups[idx0]          # 0-based internal
+    session_label = args.session        # 1-based for titles/files
     chunk = chunk.reset_index(drop=True)
 
     # Remove NaN frames from the selected session
@@ -110,7 +121,7 @@ def main():
         ax.set_ylim(y_min, y_max)
         ax.set_zlim(z_min, z_max)
         ax.set_xlabel("X"); ax.set_ylabel("Y"); ax.set_zlabel("Z")
-    # optional: equal aspect
+        # Equal-ish aspect
         try:
             span = max(x_max - x_min, y_max - y_min, z_max - z_min)
             cx, cy, cz = (x_min + x_max)/2, (y_min + y_max)/2, (z_min + z_max)/2
@@ -134,7 +145,7 @@ def main():
         for base in bases:
             x, y, z = f"{base}_x", f"{base}_y", f"{base}_z"
             if x in chunk and y in chunk and z in chunk:
-                xv, yv, zv = chunk.at[frame, x], chunk.at[frame, y], chunk.at[frame,z]
+                xv, yv, zv = chunk.at[frame, x], chunk.at[frame, y], chunk.at[frame, z]
                 if pd.notna(xv) and pd.notna(yv) and pd.notna(zv):
                     J[base] = (float(xv), float(yv), float(zv))
         if not J:
@@ -151,27 +162,43 @@ def main():
                 ln.set_data([], [])
                 ln.set_3d_properties([])
 
-        ax.set_title(f"Session {sid} · Frame {frame}")
+        ax.set_title(f"Session {session_label} · Frame {frame}")
         return (scat, *lines)
 
     ani = animation.FuncAnimation(fig, update, frames=len(chunk), init_func=init,
                                   interval=1000/args.fps, blit=False)
 
-    # Output filenames
-    base = args.out or f"session_{sid}"
+    # Output filenames (use 1-based label in names)
+    base = args.out or f"Session_{session_label}"
     out_dir = os.path.dirname(os.path.abspath(args.csv))
     mp4_path = os.path.join(out_dir, f"{base}.mp4")
     gif_path = os.path.join(out_dir, f"{base}.gif")
 
-    # Save: try MP4, else GIF
+    # --- Save BOTH MP4 and GIF ---
+    mp4_ok = gif_ok = False
+
+    # MP4
     try:
-        writer = animation.FFMpegWriter(fps=args.fps, codec="libx264", bitrate=1800)
-        ani.save(mp4_path, writer=writer, dpi=120)
-        print(f"[OK] Saved MP4 → {mp4_path}")
+        print("[INFO] Saving MP4…")
+        writer_mp4 = FFMpegWriter(fps=args.fps, codec="libx264", bitrate=1800)
+        ani.save(mp4_path, writer=writer_mp4, dpi=120)
+        print(f"[OK] MP4 saved → {mp4_path}")
+        mp4_ok = True
     except Exception as e:
-        print(f"[WARN] MP4 save failed ({e}). Saving GIF instead …")
-        ani.save(gif_path, writer="pillow", fps=args.fps, dpi=120)
-        print(f"[OK] Saved GIF → {gif_path}")
+        print(f"[WARN] MP4 save failed: {e}")
+
+    # GIF
+    try:
+        print("[INFO] Saving GIF…")
+        writer_gif = PillowWriter(fps=args.fps)
+        ani.save(gif_path, writer=writer_gif, dpi=120)
+        print(f"[OK] GIF saved → {gif_path}")
+        gif_ok = True
+    except Exception as e:
+        print(f"[WARN] GIF save failed: {e}")
+
+    if not mp4_ok and not gif_ok:
+        raise RuntimeError("Both MP4 and GIF saves failed. Ensure ffmpeg (for MP4) and pillow are available.")
 
     plt.close(fig)
 
