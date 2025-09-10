@@ -29,8 +29,12 @@ Hi, I’m Jorjie Wilson, a biomechanics research engineer and data enthusiast pa
 ## 🔗 Projects
 
 - [**Pitching Mechanics Analysis**](./Pitching_Mechanics)
+  Analyze rotational kinematic sequence from pitching motion capture data, with plots for pelvis, torso, and shoulder rotation.  
 - [**Baseball Pitching Animation**](./project1_baseballpitching)
+  Generates 3D animations from landmark data, visualizing player movement and pitching sequences frame by frame.
 - [**Basketball Free Throw Analysis**](./project2_shootinganalysis)
+  Processes motion capture data to extract joint angles and ball release, plotting elbow, wrist, and knee flexion magnitudes for shooting form evaluation.
+  
 
 ---
 
