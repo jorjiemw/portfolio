@@ -20,6 +20,16 @@ This project provides tools to **analyze and visualize the rotational kinematic 
 
 ---
 
+### 📂 Project Structure
+- Pitching_Mechanics/
+- ├─ README.md                 ← Project description (what it does, how to run it)
+- ├─ src/                      ← Code lives here
+- │  ├─ pitching_mechanics.py  ← main script for animation              
+- ├─ assets/                   ← Plot
+- │  ├─ session_1_rotational_sequence.png
+- ├─ data/                    ← Small sample dataset 
+- │  └─ pitching_joint_angles.csv
+- ├─ requirements.txt         ← List of Python packages needed
 
 
 ## Installation
