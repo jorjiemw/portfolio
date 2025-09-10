@@ -5,7 +5,7 @@ This toolkit computes **wrist, elbow, and knee flexion magnitudes**, detects **b
 
 ---
 
-## 📈 Features
+## 🔑 Features
 
 -  Plots **Right & Left**: Wrist, Elbow, Knee flexion magnitudes (deg)
 -  **Release detection** (default = ball leaves hand) with **adaptive thresholds**
