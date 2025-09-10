@@ -5,6 +5,11 @@ This toolkit computes **wrist, elbow, and knee flexion magnitudes**, detects **b
 
 ---
 
+### 📈 Plot
+![Pitching Demo Animation](assets/elbow_flexion_magnitude.png)  
+
+---
+
 ## 🔑 Features
 
 -  Plots **Right & Left**: Wrist, Elbow, Knee flexion magnitudes (deg)
