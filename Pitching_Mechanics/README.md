@@ -6,7 +6,7 @@ This project provides tools to **analyze and visualize the rotational kinematic 
 ---
 
 ### 📈 Plot
-![Pitching Demo Animation](assets/session_1_rotational_sequence.png)  
+![Rotational Sequence Plot](assets/session_1_rotational_sequence.png)
 
 ---
 
