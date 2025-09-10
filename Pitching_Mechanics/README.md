@@ -33,8 +33,9 @@ This project provides tools to **analyze and visualize the rotational kinematic 
 
 
 ### ▶️ Usage
-- **Install** numpy, pandas, matplotlib
-- **Run the script with:**
+1. **Install**
+   python -m pip install numpy matplotlib pandas
+2. **Modify Script**
 python pitching_mechanics.py -i <csv_file> -o <output_dir> -s <session>
 - Arguments:
 - -i / --input : Path to dataset (e.g., data/pitching_joint_angles.csv)
