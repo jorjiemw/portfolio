@@ -21,10 +21,10 @@ This toolkit computes **wrist, elbow, and knee flexion magnitudes**, detects **b
 - ├─ src/               # Code lives here
 - │   ├─ shooting_mechanics.py   # main script for animation              
 - ├─ assets/            # Pictures, GIFs, MP4s for README
-- │   ├─ elbow_flexion_magnitude.png
--     ├─ wrist_flexion_magnitude.png
--     ├─ knee_flexion_magnitude.png
--     ├─ magnitudes_wrist_elbow_knee.csv
+- │  ├─ elbow_flexion_magnitude.png
+- │   ├─ wrist_flexion_magnitude.png
+- │   ├─ knee_flexion_magnitude.png
+- │   ├─ magnitudes_wrist_elbow_knee.csv
 - ├─ data/              # JSON file from SPL Open Data 
 -     └─ BB_FT_P0001_T0001.json
 
