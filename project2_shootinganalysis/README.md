@@ -5,13 +5,13 @@ This toolkit computes **wrist, elbow, and knee flexion magnitudes**, detects **b
 
 ---
 
-## ✨ Features
+## 📈 Features
 
-- 📈 Plots **Right & Left**: Wrist, Elbow, Knee flexion magnitudes (deg)
-- 🎯 **Release detection** (default = ball leaves hand) with **adaptive thresholds**
-- 🧽 Optional smoothing & tiny-gap handling (advanced script)
-- 🗂️ Exports **PNG** plots + a **CSV** table
-- ⚙️ Works best at **30 fps** (supported in scripts)
+-  Plots **Right & Left**: Wrist, Elbow, Knee flexion magnitudes (deg)
+-  **Release detection** (default = ball leaves hand) with **adaptive thresholds**
+-  Optional smoothing & tiny-gap handling (advanced script)
+-  Exports **PNG** plots + a **CSV** table
+-  Works best at **30 fps** (supported in scripts)
 
 ---
 
