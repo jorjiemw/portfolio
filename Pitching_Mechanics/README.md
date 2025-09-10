@@ -7,16 +7,16 @@ This project provides tools to **analyze and visualize the rotational kinematic 
 
 ## 📊 Features
 -  **Session Splitting**  
-  - Supports datasets with `session_id` or automatic splitting when time resets to 0.  
+   Supports datasets with `session_id` or automatic splitting when time resets to 0.  
 -  **MER Detection**  
-  - Uses the `MER_time` column (in **seconds**) to mark the critical MER event.  
+   Uses the `MER_time` column (in **seconds**) to mark the critical MER event.  
 -  **Visualization**  
-  - Creates plots of pelvis, torso, and throwing shoulder rotation vs. time.  
-  - Annotates MER with a dashed vertical line when available.  
+   Creates plots of pelvis, torso, and throwing shoulder rotation vs. time.  
+   Annotates MER with a dashed vertical line when available.  
 -  **Batch Processing**  
-  - Run on all sessions in a file or select a specific session.  
+   Run on all sessions in a file or select a specific session.  
 -  **Error Checking**  
-  - Detects missing or mislabeled columns and reports them clearly.
+   Detects missing or mislabeled columns and reports them clearly.
 
 ---
 
