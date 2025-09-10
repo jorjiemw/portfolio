@@ -39,6 +39,4 @@ python pitching_mechanics.py -i <csv_file> -o <output_dir> -s <session>
 - Arguments:
 - -i / --input : Path to dataset (e.g., data/pitching_joint_angles.csv)
 - -o / --outdir : Folder to save generated plots (e.g., results/)
-- -s / --session :
-- all → Process all sessions
-- 1, 2, … → Specific session index
+- -s / --session : all → Process all sessions or 1, 2, … → Specific session index
