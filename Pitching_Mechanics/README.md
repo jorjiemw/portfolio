@@ -33,7 +33,7 @@ This project provides tools to **analyze and visualize the rotational kinematic 
 
 
 ### ▶️ Usage
-
+- **Install** numpy, pandas, matplotlib
 - **Run the script with:**
 python pitching_mechanics.py -i <csv_file> -o <output_dir> -s <session>
 - Arguments:
