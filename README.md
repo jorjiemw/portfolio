@@ -33,10 +33,11 @@ Hi, I’m Jorjie Wilson, a biomechanics research engineer and data enthusiast pa
 
   [Rotational Sequence Plot](assets/session_1_rotational_sequence.png)
 
-  ---
-
 - [**Baseball Pitching Animation**](./project1_baseballpitching)
   Generates 3D animations from landmark data, visualizing player movement and pitching sequences frame by frame.
+  
+  ![Pitching Demo Animation](assets/Session_1.mp4)  
+
 - [**Basketball Free Throw Analysis**](./project2_shootinganalysis)
   Processes motion capture data to extract joint angles and ball release, plotting elbow, wrist, and knee flexion magnitudes for shooting form evaluation.
   
