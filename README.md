@@ -18,10 +18,19 @@ Each project is housed in its own GitHub repository and includes a detailed READ
 
 Hi, I’m Jorjie Wilson, a biomechanics research engineer and data enthusiast passionate about turning raw data into actionable insights. This portfolio represents both personal learning projects and applied analysis work.
 
+
 📫 Connect with me:  
 - [LinkedIn](https://linkedin.com/in/jorjie-wilson)  
 - [GitHub](https://github.com/jorjiemw)  
 - [Email](jorjiewilson@gmail.com)
+
+---
+
+---
+
+## 🔗 Projects
+
+---
 
 ---
 
