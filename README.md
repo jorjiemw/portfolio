@@ -26,11 +26,7 @@ Hi, I’m Jorjie Wilson, a biomechanics research engineer and data enthusiast pa
 
 ---
 
----
-
 ## 🔗 Projects
-
----
 
 ---
 
