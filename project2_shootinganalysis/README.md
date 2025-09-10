@@ -17,15 +17,15 @@ This toolkit computes **wrist, elbow, and knee flexion magnitudes**, detects **b
 
 ### 📂 Project Structure
 - project2_shootinganalysis/
-- ├─ README.md                       # Project description (what it does, how to run it)
-- ├─ src/                            # Code lives here
+- ├─ README.md                       ← Project description (what it does, how to run it)
+- ├─ src/                            ← Code lives here
 - │   ├─ shooting_mechanics.py   # main script for animation              
-- ├─ assets/                         # Pictures, GIFs, MP4s for README
+- ├─ assets/                         ← Pictures, GIFs, MP4s for README
 - │  ├─ elbow_flexion_magnitude.png
 - │  ├─ wrist_flexion_magnitude.png
 - │  ├─ knee_flexion_magnitude.png
 - │  ├─ magnitudes_wrist_elbow_knee.csv
-- ├─ data/                           # JSON file from SPL Open Data 
+- ├─ data/                           ← JSON file from SPL Open Data 
 - │  └─ BB_FT_P0001_T0001.json
 
 ---
@@ -35,8 +35,8 @@ This toolkit computes **wrist, elbow, and knee flexion magnitudes**, detects **b
 1. **Install**
    python -m pip install numpy matplotlib pandas
 2. **Modify Script**
-- INPUT_JSON    = r"C:\path\BB_FT_P0001_T0001 (1).json"  # ← your JSON file
-- OUT_DIR       = r"C:\plots"                            # ← where to save outputs
-- SHOOTING_SIDE = "R"                                    # or "L"
-- FPS           = 30.0                                   # your recording frame rate
-- SMOOTH_WIN    = 5                                      # 3–9; higher = smoother
+- INPUT_JSON    = r"C:\path\BB_FT_P0001_T0001 (1).json"   ← your JSON file
+- OUT_DIR       = r"C:\plots"                             ← where to save outputs
+- SHOOTING_SIDE = "R"                                     ← or "L"
+- FPS           = 30.0                                    ← your recording frame rate
+- SMOOTH_WIN    = 5                                       ← 3–9; higher = smoother
