@@ -41,7 +41,7 @@ Hi, I’m Jorjie Wilson, a biomechanics research engineer and data enthusiast pa
 - [**Basketball Free Throw Analysis**](./project2_shootinganalysis)
   Processes motion capture data to extract joint angles and ball release, plotting elbow, wrist, and knee flexion magnitudes for shooting form evaluation.
 
-  ![Elbow Flexion Plot](project2_shootinganalysis/assests/elbow_flexion_magnitude.png)  
+  [Elbow Flexion Plot](project2_shootinganalysis/assests/elbow_flexion_magnitude.png)  
   
 
 ---
