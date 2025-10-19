@@ -31,7 +31,7 @@ Hi, I’m Jorjie Wilson, a biomechanics research engineer and data enthusiast pa
 - [**Pitching Mechanics Analysis**](./Pitching_Mechanics)
   Analyze rotational kinematic sequence from pitching motion capture data, with plots for pelvis, torso, and shoulder rotation.
 
-  [Rotational Sequence Plot](assets/session_1_rotational_sequence.png)
+  ![Rotational Sequence Plot](assets/session_1_rotational_sequence.png)
 
 - [**Baseball Pitching Animation**](./project1_baseballpitching)
   Generates 3D animations from landmark data, visualizing player movement and pitching sequences frame by frame.
