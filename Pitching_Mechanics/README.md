@@ -39,7 +39,7 @@ This project provides tools to **analyze and visualize the rotational kinematic 
 
 ---
 
-### 📂 Project Structure
+## 📂 Project Structure
 - Pitching_Mechanics/
 - ├─ README.md                 ← Project description (what it does, how to run it)
 - ├─ src/                      
