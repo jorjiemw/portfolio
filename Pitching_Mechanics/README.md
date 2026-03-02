@@ -1,5 +1,19 @@
 # Pitching Mechanics — Rotational Kinematic Sequence ⚾
+### 📌 Project Overview
 
+The concept of proximal-to-distal sequencing is foundational in baseball pitching biomechanics. Coaches and sports scientists often describe efficient pitching as a coordinated transfer of energy from:
+
+Pelvis → Torso → Arm → Hand
+
+While this principle is widely accepted, important questions remain:
+
+Is this sequencing pattern consistently observed in real biomechanical data?
+
+Does the timing between segment peaks matter more than peak magnitude?
+
+Is sequencing variability related to ball velocity?
+
+This project investigates rotational kinematic sequencing using Driveline Baseball’s open-source biomechanics dataset to better understand how segment timing and coordination relate to performance.
 ## Overview
 This project provides tools to **analyze and visualize the rotational kinematic sequence** of baseball pitchers using sample joint angle CSV data from Driveline's Open Source Data. It plots **pelvis, torso, and throwing shoulder rotation** over time for each pitching session, and highlights the timing of **Maximum External Rotation (MER)** if available.
 
