@@ -1,5 +1,5 @@
 # Pitching Mechanics — Rotational Kinematic Sequence ⚾
-### 📌 Project Overview
+## 📌 Project Overview
 
 The concept of proximal-to-distal sequencing is foundational in baseball pitching biomechanics. Coaches and sports scientists often describe efficient pitching as a coordinated transfer of energy from:
 
@@ -19,7 +19,7 @@ This project provides tools to **analyze and visualize the rotational kinematic 
 
 ---
 
-### 📈 Plot
+## 📈 Plot
 [Rotational Sequence Plot](assets/session_1_rotational_sequence.png)
 
 ---
@@ -51,7 +51,7 @@ This project provides tools to **analyze and visualize the rotational kinematic 
 - ├─ requirements.txt         ← List of Python packages needed
 
 
-### ▶️ Usage
+## ▶️ Usage
 1. **Install**
    python -m pip install numpy matplotlib pandas
 2. **Modify Script**
