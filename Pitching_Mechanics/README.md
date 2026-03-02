@@ -17,12 +17,8 @@ This project investigates rotational kinematic sequencing using Driveline Baseba
 ## Overview
 This project provides tools to **analyze and visualize the rotational kinematic sequence** of baseball pitchers using sample joint angle CSV data from Driveline's Open Source Data. It plots **pelvis, torso, and throwing shoulder rotation** over time for each pitching session, and highlights the timing of **Maximum External Rotation (MER)** if available.
 
----
-
 ## 📈 Plot
 [Rotational Sequence Plot](assets/session_1_rotational_sequence.png)
-
----
 
 ## 🔑 Features
 -  **Session Splitting**  
@@ -37,8 +33,6 @@ This project provides tools to **analyze and visualize the rotational kinematic 
 -  **Error Checking**  
    Detects missing or mislabeled columns and reports them clearly.
 
----
-
 ## 📂 Project Structure
 - Pitching_Mechanics/
 - ├─ README.md                 ← Project description (what it does, how to run it)
@@ -49,7 +43,6 @@ This project provides tools to **analyze and visualize the rotational kinematic 
 - ├─ data/                    ← Small sample dataset 
 - │  └─ pitching_joint_angles.csv
 - ├─ requirements.txt         ← List of Python packages needed
-
 
 ## ▶️ Usage
 1. **Install**
