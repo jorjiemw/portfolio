@@ -3,7 +3,7 @@
 
 ## Overview  
 
-This project analyzes how different components of the kinetic chain contribute to pitch velocity using open-source biomechanics data. The goal is to identify which biomechanical factors most strongly influence performance and how these relationships differ across playing levels.
+This project analyzes how different components of the kinetic chain contribute to pitch velocity using Driveline's open-source biomechanics data. The goal is to identify which biomechanical factors most strongly influence performance and how these relationships differ across playing levels.
 
 The analysis integrates:
 - Force production (ground reaction forces)
@@ -65,9 +65,12 @@ For each pitch, the following features were extracted:
 
 The strongest relationships with pitch velocity were observed in:
 
-- Forearm segment power  
-- Upper arm segment power  
-- Thorax (trunk) segment power  
+- Forearm segment power (r ≈ 0.69)  
+- Upper arm segment power (r ≈ 0.66)  
+- Thorax (trunk) segment power (r ≈ 0.63)  
+- Shoulder energy transfer (r ≈ 0.52)  
+
+These relationships were consistently stronger than those observed for force production or segmental velocity.
 
 This indicates that pitch velocity is more strongly associated with how efficiently energy is transferred through the kinetic chain than with how much force is generated.
 
@@ -77,13 +80,20 @@ This indicates that pitch velocity is more strongly associated with how efficien
 
 Across all playing levels, variables related to the arm (upper arm and forearm) consistently showed the highest correlations with pitch velocity.
 
+For example:
+- High school forearm segment power: r ≈ 0.91  
+- College forearm segment power: r ≈ 0.61  
+
 This suggests that effective transfer of energy into the distal segments is a key determinant of performance.
 
 ---
 
 ### 3. Force Production Plays a Secondary Role  
 
-Ground reaction force and impulse variables showed moderate relationships with pitch velocity but were not among the strongest predictors.
+Ground reaction force and impulse variables showed moderate relationships with pitch velocity:
+
+- Lead ground reaction force: r ≈ 0.40  
+- Impulse variables: r ≈ 0.17–0.50 depending on level  
 
 This indicates that while force production contributes to performance, it is not the primary limiting factor.
 
@@ -96,7 +106,7 @@ This indicates that while force production contributes to performance, it is not
 - Greater reliance on arm-driven mechanics  
 
 **College**
-- Increased contribution from trunk (thorax)  
+- Increased contribution from trunk (thorax power ≈ 0.61)  
 - Improved energy transfer through the kinetic chain  
 
 **MiLB**
@@ -107,10 +117,14 @@ This indicates that while force production contributes to performance, it is not
 
 ## Interpretation  
 
-The results suggest that pitch velocity is driven more by energy transfer and coordination than by raw force production. Efficient movement of energy through the kinetic chain appears to be more important than isolated segment speed.
+Pitch velocity appears to be more strongly driven by how efficiently energy is transferred through the body—especially from the trunk into the arm—than by how much force is produced against the ground. While strength and force contribute to performance, the key difference lies in how effectively that energy is carried through the motion and expressed at the arm.
 
-Additionally, higher-level pitchers appear to rely on more integrated mechanics, with contributions distributed across multiple segments rather than dominated by a single region.
+### Actionable Insights  
 
+- Emphasize generating movement from the lower body and trunk rather than relying primarily on the arm  
+- Focus on smooth, continuous energy transfer from the hips and torso into the arm  
+- Heavy reliance on arm speed may indicate energy is not being effectively transferred earlier in the motion  
+- Training should prioritize full-body coordination and movement efficiency in addition to strength development  
 ---
 
 ## Limitations  
