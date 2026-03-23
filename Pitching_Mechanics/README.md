@@ -169,7 +169,7 @@ At higher levels (MiLB), no single variable showed a strong relationship with pi
 Pitch velocity is more strongly associated with how energy is transferred through the kinetic chain—particularly into the arm—than with force production alone. At higher levels, performance appears to depend on the coordination of multiple components rather than a single dominant factor.
 
 ## 📈 Plot
-[Rotational Sequence Plot](assets/session_1_rotational_sequence.png)
+[Rotational Sequence Plot](assets/upper_arm_dist_seg_pwr_vs_pitch_speed.png)
 
 
 
