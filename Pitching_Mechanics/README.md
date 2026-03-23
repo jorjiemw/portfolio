@@ -167,16 +167,9 @@ At higher levels (MiLB), no single variable showed a strong relationship with pi
 ## Key Takeaway  
 
 Pitch velocity is more strongly associated with how energy is transferred through the kinetic chain—particularly into the arm—than with force production alone. At higher levels, performance appears to depend on the coordination of multiple components rather than a single dominant factor.
+
 ## 📈 Plot
 [Rotational Sequence Plot](assets/session_1_rotational_sequence.png)
 
 
-## ▶️ Usage
-1. **Install**
-   python -m pip install numpy matplotlib pandas
-2. **Modify Script**
-python pitching_mechanics.py -i <csv_file> -o <output_dir> -s <session>
-- Arguments:
-- -i / --input : Path to dataset (e.g., data/pitching_joint_angles.csv)
-- -o / --outdir : Folder to save generated plots (e.g., results/)
-- -s / --session : all → Process all sessions or 1, 2, … → Specific session index
+
